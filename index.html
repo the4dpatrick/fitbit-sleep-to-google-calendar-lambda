@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fitbit</title>
+  </head>
+  <body>
+    Hello Fitbit
+    <br>
+    Here is your code: <div id="code"></div>
+    <script>
+      (function(){
+        var code = document.location.search.split('=')[1]
+        document.getElementById('code').innerHTML = code
+      }())
+    </script>
+  </body>
+</html>
